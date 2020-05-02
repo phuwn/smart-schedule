@@ -1,0 +1,2 @@
+INSERT INTO "tickets" ("id", "created_at", "updated_at", "deleted_at", "list_id", "name", "notes", "status", "priority", "tags", "remind", "remind_date", "repeat") VALUES
+('837bdee9-0e10-4267-bf28-d44e0ab93eed', '2020-05-02 09:25:32.297451+00', NULL, NULL, 'ad2693d7-9785-42b5-89d7-6f5a8675c33a', 'daily push up', 'mỗi ngày hít đất 100 cái', '1', '1', NULL, NULL, NULL, '1');

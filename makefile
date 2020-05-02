@@ -29,3 +29,6 @@ migrate-up-local:
 
 migrate-down-local:
 	sql-migrate down -config=dbconfig.yml -env="local"
+
+migrate-new-local:
+	sql-migrate new -config=dbconfig.yml -env="local" $(name)
