@@ -8,6 +8,8 @@ import (
 	"os/signal"
 	"syscall"
 
+	_ "github.com/jinzhu/gorm/dialects/postgres"
+
 	"github.com/phuwn/smart-schedule/pkg/handler"
 	"github.com/phuwn/tools/log"
 	"github.com/phuwn/tools/util/db"
