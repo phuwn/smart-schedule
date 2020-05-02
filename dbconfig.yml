@@ -1,0 +1,4 @@
+local:
+  dialect: postgres
+  datasource: user=phuwn password=password host=127.0.0.1 port=5996 dbname=smart_schedule sslmode=disable
+  dir: data/migration

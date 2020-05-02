@@ -1,0 +1,11 @@
+version: "3"
+services:
+  db:
+    image: postgres
+    environment:
+      POSTGRES_PASSWORD: password
+      POSTGRES_USER: phuwn
+      POSTGRES_DB: smart_schedule
+    container_name: smart_schedule_db
+    ports:
+      - 5996:5432
