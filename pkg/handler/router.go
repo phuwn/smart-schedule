@@ -3,9 +3,9 @@ package handler
 import (
 	"github.com/labstack/echo"
 
+	"github.com/phuwn/tools/db"
 	"github.com/phuwn/tools/handler"
 	mw "github.com/phuwn/tools/middleware"
-	"github.com/phuwn/tools/util/db"
 )
 
 // JSON - shorcut for handler.JSON function
@@ -18,9 +18,13 @@ func Router() *echo.Echo {
 	r.Pre(mw.RemoveTrailingSlash)
 	{
 		r.Use(mw.CorsConfig())
+		r.Use(mw.AddTransaction)
 	}
 
 	r.GET("/healthz", healthz)
+	{
+		listRoutes(r)
+	}
 
 	return r
 }
